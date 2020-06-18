@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class='home'>
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Abderrazzak Asmaayni</title>
+</head>
+
+<body>
+    <div class='main column'>
+        <div id='bar' class='topbar'>
+            <div id='about' class='column item selected' onclick="showAbout()"> About me</div>
+            <div id='contact' class='column item' onclick="showContact()"> Resume & Contact</div>
+            <script>
+                function showAbout() {
+                    document.getElementById("aboutme").style.display = "flex";
+                    document.getElementById("about").style.backgroundColor = "rgb(114, 114, 110)";
+                    document.getElementById("resumeContact").style.display = "none";
+                    document.getElementById("contact").style.backgroundColor = "rgb(157, 157, 207)";
+                }
+
+                function showContact() {
+                    document.getElementById("aboutme").style.display = "none";
+                    document.getElementById("about").style.backgroundColor = "rgb(157, 157, 207)";
+                    document.getElementById("resumeContact").style.display = "flex";
+                    document.getElementById("contact").style.backgroundColor = " rgb(114, 114, 110)";
+                }
+            </script>
+        </div>
+        <div id='aboutme' class='row aboutme'>
+            <img class='column image' src="photo.png"></img>
+            <div class='column content'>
+                <span class='name'>Abderrazzak Asmaayni</span>
+                <span>
+                    I'm a Computer Science graduate from Penn State University. I am currently working as Solution
+                    Analyst (Software Engineer) at Deloitte in Mechanicsburg office in PA and i have been in this role
+                    for the passt two years.
+                    Im passionate about developing softwares and web applications and always eager to learn new
+                    technologies.
+
+                    Im open to any new role that could further improve my skills as software engineer.
+                    <br><br>
+                    <span class='subtitle'>Proficent in:</span><br>
+                    oot, Spring Batch, VueJS, HTML, JavaScript, jQuery, SQL, Docker, Redis.
+
+                    <br><br>
+                    <span class='subtitle'>Familiar with:</span><br>
+                    Python, C++, MongoDb, AngularJS
+
+                </span>
+            </div>
+        </div>
+        <div id='resumeContact' class='contact'>
+            <div class='row'>
+                <i class="fa fa-envelope" aria-hidden="true"></i><span class='email'>aasmaayn@gmail.com</span>
+            </div >
+
+            <div class='row'>
+                <i class="fa fa-phone" aria-hidden="true"></i> <span class='email'>(717) 805 9374</span>
+            </div>
+
+            <div class='row'><span>Click &nbsp</span> to download Resume</div>
+        </div>
+       
+
+    </div>
+    
+    </div>
+
+
+
+</body>
+<footer>
+    <span class='last'>Last updated : 06/16/2020</span>
+  </footer>
+
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Piedra&display=swap');
+
+    .home {
+        margin: auto;
+        width: 70%;
+    }
+
+    .main {
+        margin-top: 20px;
+        width: 100%;
+
+    }
+
+    .name {
+        font-family: 'MuseoModerno', cursive;
+        font-size: 30pt;
+        display: block;
+    }
+
+    .item {
+        font-family: "Open Sans", sans-serif;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .item:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: aliceblue;
+    }
+
+    .topbar {
+        display: flex;
+        background-color: rgb(157, 157, 207);
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .image {
+        width: 200px;
+        border-radius: 5px;
+    }
+
+
+    .row {
+        display: flex;
+        width:100%;
+        
+    }
+
+    .column {
+        display: inline-block;
+    }
+
+    .aboutme {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .content {
+        margin-left: 20px;
+    }
+
+    .subtitle {
+        font-weight: bold;
+    }
+
+    .last {
+        margin-top: 70px;
+        font-size: 10pt;
+    }
+    .contact{
+        margin-top: 50px;
+        display: none;
+        margin-bottom: 100px;
+
+    }
+    .email{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contactdiv{
+        width: 100%;
+    }
+
+    .selected{
+        background-color: rgb(114, 114, 110);
+    }
+</style>
